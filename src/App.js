@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-  import 
+import Context from './Components/context/Context';
+
 function App() {
+
   return (
     <div className="App">
-      
+      <Context/>
     </div>
   );
 }
