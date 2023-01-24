@@ -5,6 +5,7 @@ import { useState } from 'react'
 const Memo = () => {
     const [number, setNumber] = useState(0);
     const [dark, setDark] = useState(false);
+    
     const doubleNumber = useMemo(() => {
         return slowFunction(number); //calculation function
     }, [number]) // list of dependencies // compare depcs with the orignial
